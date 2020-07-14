@@ -1,0 +1,841 @@
+*** Starting uWSGI 2.0.18 (64bit) on [Wed Mar 18 11:15:40 2020] ***
+compiled with version: 5.4.0 20160609 on 17 March 2020 13:39:12
+os: Linux-4.15.0-88-generic #88~16.04.1-Ubuntu SMP Wed Feb 12 04:19:15 UTC 2020
+nodename: ubuntu
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 2
+current working directory: /home/action/PycharmProjects/day18/axf
+writing pidfile to uwsgi.pid
+detected binary path: /home/action/.virtualenvs/django1908/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /home/action/PycharmProjects/day18/axf
+your processes number limit is 11674
+your memory page size is 4096 bytes
+detected max file descriptor number: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 0.0.0.0:8888 fd 3
+Python version: 3.5.2 (default, Oct  8 2019, 13:06:37)  [GCC 5.4.0 20160609]
+Python main interpreter initialized at 0x235a4f0
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 834320 bytes (814 KB) for 40 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x235a4f0 pid: 5555 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 5555)
+spawned uWSGI worker 1 (pid: 5557, cores: 10)
+spawned uWSGI worker 2 (pid: 5558, cores: 10)
+spawned uWSGI worker 3 (pid: 5568, cores: 10)
+spawned uWSGI worker 4 (pid: 5569, cores: 10)
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.18 (64bit) on [Wed Mar 18 11:17:55 2020] ***
+compiled with version: 5.4.0 20160609 on 17 March 2020 13:39:12
+os: Linux-4.15.0-88-generic #88~16.04.1-Ubuntu SMP Wed Feb 12 04:19:15 UTC 2020
+nodename: ubuntu
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 2
+current working directory: /home/action/PycharmProjects/day18/axf
+writing pidfile to uwsgi.pid
+detected binary path: /home/action/.virtualenvs/django1908/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /home/action/PycharmProjects/day18/axf
+your processes number limit is 11674
+your memory page size is 4096 bytes
+detected max file descriptor number: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 0.0.0.0:8888 fd 3
+Python version: 3.5.2 (default, Oct  8 2019, 13:06:37)  [GCC 5.4.0 20160609]
+Python main interpreter initialized at 0x182a4f0
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 834320 bytes (814 KB) for 40 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x182a4f0 pid: 5649 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 5649)
+spawned uWSGI worker 1 (pid: 5651, cores: 10)
+spawned uWSGI worker 2 (pid: 5652, cores: 10)
+spawned uWSGI worker 3 (pid: 5662, cores: 10)
+spawned uWSGI worker 4 (pid: 5663, cores: 10)
+[pid: 5663|app: 0|req: 1/1] 127.0.0.1 () {48 vars in 966 bytes} [Wed Mar 18 11:18:07 2020] GET / => generated 74 bytes in 331 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+[pid: 5651|app: 0|req: 1/2] 127.0.0.1 () {42 vars in 868 bytes} [Wed Mar 18 11:18:13 2020] GET /axfmine/mine => generated 0 bytes in 231 msecs (HTTP/1.1 301) 3 headers in 119 bytes (1 switches on core 0)
+18 icons/timg_L64KUmC.jpeg 111111
+[pid: 5652|app: 0|req: 1/3] 127.0.0.1 () {42 vars in 870 bytes} [Wed Mar 18 11:18:13 2020] GET /axfmine/mine/ => generated 5740 bytes in 314 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 0)
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+-- unavailable modifier requested: 3 --
+invalid request block size: 21573 (max 4096)...skip
+-- unavailable modifier requested: 3 --
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21584 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 19794 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21584 (max 4096)...skip
+-- unavailable modifier requested: 128 --
+invalid request block size: 19525 (max 4096)...skip
+-- unavailable modifier requested: 22 --
+-- unavailable modifier requested: 22 --
+Empty python request. skip.
+[pid: 19994|app: -1|req: -1/293]  () {0 vars in 0 bytes} [Sun May  3 17:07:21 2020]   => generated 0 bytes in 0 msecs ( 0) 0 headers in 0 bytes (0 switches on core 3)
+Empty python request. skip.
+[pid: 19993|app: -1|req: -1/294]  () {0 vars in 0 bytes} [Sun May  3 17:07:21 2020]   => generated 0 bytes in 0 msecs ( 0) 0 headers in 0 bytes (0 switches on core 2)
+invalid request block size: 25956 (max 4096)...skip
+invalid request block size: 21584 (max 4096)...skip
+invalid request block size: 19790 (max 4096)...skip
+-- unavailable modifier requested: 3 --
+invalid request block size: 25709 (max 4096)...skip
+-- unavailable modifier requested: 58 --
+-- unavailable modifier requested: 1 --
+invalid uwsgi request (current strsize: 0). skip.
+[pid: 19996|app: -1|req: -1/298]  () {0 vars in 1 bytes} [Sun May  3 17:07:38 2020]   => generated 0 bytes in 0 msecs ( 500) 0 headers in 0 bytes (0 switches on core 7)
+uwsgi key cannot be null. skip this var.
+[pid: 19995|app: -1|req: -1/299]  () {0 vars in 3 bytes} [Sun May  3 17:07:39 2020]   => generated 0 bytes in 0 msecs ( 500) 0 headers in 0 bytes (0 switches on core 0)
+invalid request block size: 20297 (max 4096)...skip
+-- unavailable modifier requested: 22 --
+-- unavailable modifier requested: 22 --
+-- unavailable modifier requested: 128 --
+invalid request block size: 21573 (max 4096)...skip
+-- unavailable modifier requested: 3 --
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 20047 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+-- unavailable modifier requested: 1 --
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 20047 (max 4096)...skip
+invalid request block size: 16709 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+-- unavailable modifier requested: 3 --
+uwsgi_proto_uwsgi_parser(): Connection reset by peer [proto/uwsgi.c line 35]
+invalid request block size: 21573 (max 4096)...skip
+uwsgi_proto_uwsgi_parser(): Connection reset by peer [proto/uwsgi.c line 35]
+-- unavailable modifier requested: 3 --
+invalid request block size: 21573 (max 4096)...skip
+-- unavailable modifier requested: 3 --
+-- unavailable modifier requested: 3 --
+invalid request block size: 21573 (max 4096)...skip
+-- unavailable modifier requested: 3 --
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+-- unavailable modifier requested: 22 --
+-- unavailable modifier requested: 22 --
+-- unavailable modifier requested: 3 --
+-- unavailable modifier requested: 3 --
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 16709 (max 4096)...skip
+invalid request block size: 20047 (max 4096)...skip
+invalid request block size: 20047 (max 4096)...skip
+invalid request block size: 20047 (max 4096)...skip
+-- unavailable modifier requested: 4 --
+-- unavailable modifier requested: 4 --
+-- unavailable modifier requested: 4 --
+uwsgi_proto_uwsgi_parser(): Connection reset by peer [proto/uwsgi.c line 40]
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 16709 (max 4096)...skip
+invalid request block size: 16709 (max 4096)...skip
+-- unavailable modifier requested: 3 --
+-- unavailable modifier requested: 123 --
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 7937 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+-- unavailable modifier requested: 3 --
+-- unavailable modifier requested: 3 --
+-- unavailable modifier requested: 3 --
+invalid request block size: 20047 (max 4096)...skip
+invalid request block size: 16709 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+-- unavailable modifier requested: 3 --
+-- unavailable modifier requested: 3 --
+invalid request block size: 20047 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+-- unavailable modifier requested: 22 --
+invalid request block size: 26890 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+-- unavailable modifier requested: 3 --
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+-- unavailable modifier requested: 3 --
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 20047 (max 4096)...skip
+invalid request block size: 20047 (max 4096)...skip
+invalid request block size: 20047 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+-- unavailable modifier requested: 3 --
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 7937 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+-- unavailable modifier requested: 3 --
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21327 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+-- unavailable modifier requested: 3 --
+invalid request block size: 21327 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21327 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+Empty python request. skip.
+[pid: 19995|app: -1|req: -1/330]  () {0 vars in 0 bytes} [Sun May 10 05:06:01 2020]   => generated 0 bytes in 0 msecs ( 0) 0 headers in 0 bytes (0 switches on core 8)
+-- unavailable modifier requested: 3 --
+-- unavailable modifier requested: 3 --
+invalid request block size: 21573 (max 4096)...skip
+-- unavailable modifier requested: 3 --
+invalid request block size: 21573 (max 4096)...skip
+-- unavailable modifier requested: 22 --
+invalid request block size: 26890 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+-- unavailable modifier requested: 3 --
+-- unavailable modifier requested: 3 --
+-- unavailable modifier requested: 3 --
+-- unavailable modifier requested: 3 --
+-- unavailable modifier requested: 3 --
+invalid request block size: 21573 (max 4096)...skip
+-- unavailable modifier requested: 3 --
+-- unavailable modifier requested: 3 --
+-- unavailable modifier requested: 3 --
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21584 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 19794 (max 4096)...skip
+invalid request block size: 21587 (max 4096)...skip
+invalid request block size: 28171 (max 4096)...skip
+uwsgi_proto_uwsgi_parser(): Connection reset by peer [proto/uwsgi.c line 40]
+invalid request block size: 21573 (max 4096)...skip
+uwsgi_proto_uwsgi_parser(): Resource temporarily unavailable [proto/uwsgi.c line 40]
+invalid request block size: 21584 (max 4096)...skip
+-- unavailable modifier requested: 128 --
+uwsgi_proto_uwsgi_parser(): Connection reset by peer [proto/uwsgi.c line 40]
+uwsgi_proto_uwsgi_parser(): Connection reset by peer [proto/uwsgi.c line 40]
+invalid request block size: 19525 (max 4096)...skip
+-- unavailable modifier requested: 22 --
+-- unavailable modifier requested: 3 --
+-- unavailable modifier requested: 22 --
+Empty python request. skip.
+[pid: 19993|app: -1|req: -1/347]  () {0 vars in 0 bytes} [Mon May 11 17:27:04 2020]   => generated 0 bytes in 0 msecs ( 0) 0 headers in 0 bytes (0 switches on core 8)
+Empty python request. skip.
+[pid: 19995|app: -1|req: -1/348]  () {0 vars in 0 bytes} [Mon May 11 17:27:04 2020]   => generated 0 bytes in 0 msecs ( 0) 0 headers in 0 bytes (0 switches on core 5)
+uwsgi_proto_uwsgi_parser(): Connection reset by peer [proto/uwsgi.c line 40]
+invalid request block size: 25956 (max 4096)...skip
+uwsgi_proto_uwsgi_parser(): Connection reset by peer [proto/uwsgi.c line 35]
+uwsgi_proto_uwsgi_parser(): Connection reset by peer [proto/uwsgi.c line 40]
+invalid request block size: 21584 (max 4096)...skip
+invalid request block size: 19790 (max 4096)...skip
+-- unavailable modifier requested: 3 --
+invalid request block size: 25709 (max 4096)...skip
+-- unavailable modifier requested: 58 --
+-- unavailable modifier requested: 1 --
+uwsgi_proto_uwsgi_parser(): Connection reset by peer [proto/uwsgi.c line 40]
+invalid uwsgi request (current strsize: 0). skip.
+[pid: 19996|app: -1|req: -1/352]  () {0 vars in 1 bytes} [Mon May 11 17:27:14 2020]   => generated 0 bytes in 0 msecs ( 500) 0 headers in 0 bytes (0 switches on core 0)
+uwsgi key cannot be null. skip this var.
+[pid: 19995|app: -1|req: -1/353]  () {0 vars in 3 bytes} [Mon May 11 17:27:14 2020]   => generated 0 bytes in 0 msecs ( 500) 0 headers in 0 bytes (0 switches on core 5)
+invalid request block size: 20297 (max 4096)...skip
+uwsgi_proto_uwsgi_parser(): Resource temporarily unavailable [proto/uwsgi.c line 40]
+Empty python request. skip.
+[pid: 19993|app: -1|req: -1/354]  () {0 vars in 0 bytes} [Mon May 11 17:27:17 2020]   => generated 0 bytes in 0 msecs ( 0) 0 headers in 0 bytes (0 switches on core 3)
+-- unavailable modifier requested: 3 --
+-- unavailable modifier requested: 1 --
+-- unavailable modifier requested: 3 --
+Empty python request. skip.
+[pid: 19995|app: -1|req: -1/358]  () {0 vars in 0 bytes} [Mon May 11 17:27:18 2020]   => generated 0 bytes in 0 msecs ( 0) 0 headers in 0 bytes (0 switches on core 5)
+invalid request block size: 12873 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+-- unavailable modifier requested: 3 --
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 26890 (max 4096)...skip
+invalid request block size: 17747 (max 4096)...skip
+invalid request block size: 20047 (max 4096)...skip
+-- unavailable modifier requested: 3 --
+-- unavailable modifier requested: 4 --
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+-- unavailable modifier requested: 3 --
+-- unavailable modifier requested: 3 --
+invalid request block size: 21573 (max 4096)...skip
+-- unavailable modifier requested: 3 --
+-- unavailable modifier requested: 3 --
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+uwsgi_proto_uwsgi_parser(): Connection reset by peer [proto/uwsgi.c line 35]
+invalid request block size: 21573 (max 4096)...skip
+uwsgi_proto_uwsgi_parser(): Connection reset by peer [proto/uwsgi.c line 35]
+-- unavailable modifier requested: 3 --
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 18515 (max 4096)...skip
+-- unavailable modifier requested: 3 --
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+-- unavailable modifier requested: 4 --
+invalid request block size: 21573 (max 4096)...skip
+-- unavailable modifier requested: 104 --
+-- unavailable modifier requested: 3 --
+-- unavailable modifier requested: 3 --
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 26890 (max 4096)...skip
+invalid request block size: 17747 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+-- unavailable modifier requested: 3 --
+invalid request block size: 21573 (max 4096)...skip
+-- unavailable modifier requested: 22 --
+-- unavailable modifier requested: 22 --
+uwsgi_proto_uwsgi_parser(): Resource temporarily unavailable [proto/uwsgi.c line 40]
+uwsgi_proto_uwsgi_parser(): Connection reset by peer [proto/uwsgi.c line 40]
+invalid request block size: 21573 (max 4096)...skip
+uwsgi_proto_uwsgi_parser(): Connection reset by peer [proto/uwsgi.c line 35]
+invalid request block size: 11557 (max 4096)...skip
+invalid request block size: 19794 (max 4096)...skip
+invalid request block size: 21584 (max 4096)...skip
+-- unavailable modifier requested: 164 --
+uwsgi_proto_uwsgi_parser(): Connection reset by peer [proto/uwsgi.c line 35]
+uwsgi_proto_uwsgi_parser(): Connection reset by peer [proto/uwsgi.c line 35]
+Empty python request. skip.
+[pid: 19993|app: -1|req: -1/376]  () {0 vars in 0 bytes} [Thu May 14 04:20:34 2020]   => generated 0 bytes in 0 msecs ( 0) 0 headers in 0 bytes (0 switches on core 8)
+uwsgi_proto_uwsgi_parser(): Connection reset by peer [proto/uwsgi.c line 35]
+invalid request block size: 20813 (max 4096)...skip
+invalid request block size: 30831 (max 4096)...skip
+Empty python request. skip.
+[pid: 19994|app: -1|req: -1/377]  () {0 vars in 0 bytes} [Thu May 14 04:20:39 2020]   => generated 0 bytes in 0 msecs ( 0) 0 headers in 0 bytes (0 switches on core 9)
+Empty python request. skip.
+[pid: 19995|app: -1|req: -1/378]  () {0 vars in 0 bytes} [Thu May 14 04:20:39 2020]   => generated 0 bytes in 0 msecs ( 0) 0 headers in 0 bytes (0 switches on core 5)
+-- unavailable modifier requested: 204 --
+invalid request block size: 24948 (max 4096)...skip
+invalid request block size: 28530 (max 4096)...skip
+-- unavailable modifier requested: 99 --
+-- unavailable modifier requested: 3 --
+-- unavailable modifier requested: 3 --
+-- unavailable modifier requested: 3 --
+-- unavailable modifier requested: 3 --
+-- unavailable modifier requested: 3 --
+-- unavailable modifier requested: 3 --
+-- unavailable modifier requested: 3 --
+invalid request block size: 17747 (max 4096)...skip
+-- unavailable modifier requested: 1 --
+-- unavailable modifier requested: 87 --
+invalid request block size: 21330 (max 4096)...skip
+uwsgi_proto_uwsgi_parser(): Connection reset by peer [proto/uwsgi.c line 35]
+-- unavailable modifier requested: 1 --
+invalid request block size: 17998 (max 4096)...skip
+uwsgi_proto_uwsgi_parser(): Connection reset by peer [proto/uwsgi.c line 35]
+invalid request block size: 46270 (max 4096)...skip
+invalid request block size: 17156 (max 4096)...skip
+invalid request block size: 25709 (max 4096)...skip
+Empty python request. skip.
+[pid: 19994|app: -1|req: -1/391]  () {0 vars in 0 bytes} [Thu May 14 04:20:57 2020]   => generated 0 bytes in 0 msecs ( 0) 0 headers in 0 bytes (0 switches on core 9)
+invalid request block size: 20041 (max 4096)...skip
+-- unavailable modifier requested: 67 --
+uwsgi_proto_uwsgi_parser(): Connection reset by peer [proto/uwsgi.c line 35]
+invalid request block size: 30783 (max 4096)...skip
+invalid request block size: 29296 (max 4096)...skip
+-- unavailable modifier requested: 3 --
+invalid request block size: 21573 (max 4096)...skip
+-- unavailable modifier requested: 3 --
+invalid request block size: 21573 (max 4096)...skip
+-- unavailable modifier requested: 3 --
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+-- unavailable modifier requested: 22 --
+invalid request block size: 26890 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 20047 (max 4096)...skip
+invalid request block size: 20047 (max 4096)...skip
+uwsgi_proto_uwsgi_parser(): Connection reset by peer [proto/uwsgi.c line 35]
+invalid request block size: 21573 (max 4096)...skip
+-- unavailable modifier requested: 3 --
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+uwsgi_proto_uwsgi_parser(): Connection reset by peer [proto/uwsgi.c line 35]
+invalid request block size: 21573 (max 4096)...skip
+uwsgi_proto_uwsgi_parser(): Connection reset by peer [proto/uwsgi.c line 35]
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+-- unavailable modifier requested: 3 --
+invalid request block size: 21573 (max 4096)...skip
+uwsgi_proto_uwsgi_parser(): Connection reset by peer [proto/uwsgi.c line 35]
+invalid request block size: 21573 (max 4096)...skip
+uwsgi_proto_uwsgi_parser(): Connection reset by peer [proto/uwsgi.c line 35]
+-- unavailable modifier requested: 223 --
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 26890 (max 4096)...skip
+invalid request block size: 17747 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21327 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21327 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 16709 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+uwsgi_proto_uwsgi_parser(): Connection reset by peer [proto/uwsgi.c line 35]
+-- unavailable modifier requested: 3 --
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21327 (max 4096)...skip
+invalid request block size: 16709 (max 4096)...skip
+invalid request block size: 16709 (max 4096)...skip
+-- unavailable modifier requested: 3 --
+invalid request block size: 21573 (max 4096)...skip
+-- unavailable modifier requested: 3 --
+-- unavailable modifier requested: 104 --
+-- unavailable modifier requested: 3 --
+-- unavailable modifier requested: 3 --
+invalid request block size: 20047 (max 4096)...skip
+invalid request block size: 16709 (max 4096)...skip
+uwsgi_proto_uwsgi_parser(): Connection reset by peer [proto/uwsgi.c line 35]
+invalid request block size: 21573 (max 4096)...skip
+uwsgi_proto_uwsgi_parser(): Connection reset by peer [proto/uwsgi.c line 35]
+invalid request block size: 21573 (max 4096)...skip
+uwsgi_proto_uwsgi_parser(): Connection reset by peer [proto/uwsgi.c line 35]
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 20047 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+-- unavailable modifier requested: 3 --
+-- unavailable modifier requested: 3 --
+-- unavailable modifier requested: 3 --
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+-- unavailable modifier requested: 3 --
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 26890 (max 4096)...skip
+invalid request block size: 17747 (max 4096)...skip
+-- unavailable modifier requested: 3 --
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 7937 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+-- unavailable modifier requested: 3 --
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+-- unavailable modifier requested: 3 --
+-- unavailable modifier requested: 3 --
+-- unavailable modifier requested: 3 --
+-- unavailable modifier requested: 3 --
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+-- unavailable modifier requested: 3 --
+-- unavailable modifier requested: 3 --
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 16709 (max 4096)...skip
+uwsgi_proto_uwsgi_parser(): Connection reset by peer [proto/uwsgi.c line 40]
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+-- unavailable modifier requested: 4 --
+invalid request block size: 21573 (max 4096)...skip
+-- unavailable modifier requested: 3 --
+invalid request block size: 21573 (max 4096)...skip
+-- unavailable modifier requested: 22 --
+invalid request block size: 21573 (max 4096)...skip
+-- unavailable modifier requested: 3 --
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+-- unavailable modifier requested: 3 --
+uwsgi_proto_uwsgi_parser(): Connection reset by peer [proto/uwsgi.c line 35]
+invalid request block size: 21573 (max 4096)...skip
+uwsgi_proto_uwsgi_parser(): Connection reset by peer [proto/uwsgi.c line 35]
+-- unavailable modifier requested: 3 --
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21327 (max 4096)...skip
+invalid request block size: 21327 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+-- unavailable modifier requested: 3 --
+-- unavailable modifier requested: 3 --
+-- unavailable modifier requested: 3 --
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+-- unavailable modifier requested: 3 --
+-- unavailable modifier requested: 3 --
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 7937 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+uwsgi_proto_uwsgi_parser(): Connection reset by peer [proto/uwsgi.c line 40]
+-- unavailable modifier requested: 3 --
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+-- unavailable modifier requested: 3 --
+invalid request block size: 21573 (max 4096)...skip
+-- unavailable modifier requested: 4 --
+-- unavailable modifier requested: 3 --
+-- unavailable modifier requested: 3 --
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+-- unavailable modifier requested: 3 --
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+-- unavailable modifier requested: 3 --
+invalid request block size: 21573 (max 4096)...skip
+-- unavailable modifier requested: 3 --
+invalid request block size: 21573 (max 4096)...skip
+-- unavailable modifier requested: 3 --
+invalid request block size: 21573 (max 4096)...skip
+-- unavailable modifier requested: 3 --
+invalid request block size: 21573 (max 4096)...skip
+-- unavailable modifier requested: 3 --
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21327 (max 4096)...skip
+invalid request block size: 21327 (max 4096)...skip
+-- unavailable modifier requested: 3 --
+-- unavailable modifier requested: 3 --
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 7937 (max 4096)...skip
+-- unavailable modifier requested: 59 --
+-- unavailable modifier requested: 3 --
+-- unavailable modifier requested: 3 --
+invalid request block size: 21573 (max 4096)...skip
+-- unavailable modifier requested: 104 --
+-- unavailable modifier requested: 3 --
+invalid request block size: 16709 (max 4096)...skip
+invalid request block size: 16709 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+-- unavailable modifier requested: 3 --
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+-- unavailable modifier requested: 22 --
+invalid request block size: 26890 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+-- unavailable modifier requested: 3 --
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+-- unavailable modifier requested: 3 --
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 26890 (max 4096)...skip
+invalid request block size: 17747 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+uwsgi_proto_uwsgi_parser(): Connection reset by peer [proto/uwsgi.c line 35]
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+uwsgi_proto_uwsgi_parser(): Connection reset by peer [proto/uwsgi.c line 35]
+invalid request block size: 21573 (max 4096)...skip
+-- unavailable modifier requested: 3 --
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+uwsgi_proto_uwsgi_parser(): Connection reset by peer [proto/uwsgi.c line 35]
+-- unavailable modifier requested: 4 --
+invalid request block size: 21573 (max 4096)...skip
+-- unavailable modifier requested: 3 --
+invalid request block size: 21573 (max 4096)...skip
+-- unavailable modifier requested: 3 --
+-- unavailable modifier requested: 3 --
+uwsgi_proto_uwsgi_parser(): Connection reset by peer [proto/uwsgi.c line 35]
+invalid request block size: 21573 (max 4096)...skip
+uwsgi_proto_uwsgi_parser(): Connection reset by peer [proto/uwsgi.c line 35]
+-- unavailable modifier requested: 3 --
+invalid request block size: 21573 (max 4096)...skip
+uwsgi_proto_uwsgi_parser(): Connection reset by peer [proto/uwsgi.c line 35]
+invalid request block size: 21573 (max 4096)...skip
+uwsgi_proto_uwsgi_parser(): Connection reset by peer [proto/uwsgi.c line 35]
+invalid request block size: 20047 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 7937 (max 4096)...skip
+-- unavailable modifier requested: 3 --
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21327 (max 4096)...skip
+invalid request block size: 21327 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+-- unavailable modifier requested: 3 --
+invalid request block size: 21573 (max 4096)...skip
+-- unavailable modifier requested: 3 --
+-- unavailable modifier requested: 3 --
+invalid request block size: 21573 (max 4096)...skip
+-- unavailable modifier requested: 3 --
+-- unavailable modifier requested: 3 --
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+uwsgi_proto_uwsgi_parser(): Connection reset by peer [proto/uwsgi.c line 35]
+invalid request block size: 21573 (max 4096)...skip
+-- unavailable modifier requested: 3 --
+invalid request block size: 21573 (max 4096)...skip
+-- unavailable modifier requested: 4 --
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+-- unavailable modifier requested: 3 --
+-- unavailable modifier requested: 3 --
+-- unavailable modifier requested: 104 --
+-- unavailable modifier requested: 104 --
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+-- unavailable modifier requested: 3 --
+invalid request block size: 21573 (max 4096)...skip
+-- unavailable modifier requested: 4 --
+-- unavailable modifier requested: 1 --
+-- unavailable modifier requested: 4 --
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+uwsgi_proto_uwsgi_parser(): Connection reset by peer [proto/uwsgi.c line 35]
+invalid request block size: 7937 (max 4096)...skip
+-- unavailable modifier requested: 3 --
+-- unavailable modifier requested: 1 --
+invalid request block size: 21573 (max 4096)...skip
+-- unavailable modifier requested: 22 --
+invalid request block size: 26890 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+-- unavailable modifier requested: 1 --
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+-- unavailable modifier requested: 3 --
+-- unavailable modifier requested: 3 --
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+-- unavailable modifier requested: 22 --
+invalid request block size: 26890 (max 4096)...skip
+-- unavailable modifier requested: 3 --
+-- unavailable modifier requested: 3 --
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+-- unavailable modifier requested: 3 --
+invalid request block size: 21573 (max 4096)...skip
+-- unavailable modifier requested: 3 --
+-- unavailable modifier requested: 3 --
+-- unavailable modifier requested: 3 --
+-- unavailable modifier requested: 3 --
+-- unavailable modifier requested: 3 --
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+-- unavailable modifier requested: 3 --
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+-- unavailable modifier requested: 3 --
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 27938 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+uwsgi_proto_uwsgi_parser(): Resource temporarily unavailable [proto/uwsgi.c line 40]
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+uwsgi_proto_uwsgi_parser(): Connection reset by peer [proto/uwsgi.c line 35]
+invalid request block size: 7937 (max 4096)...skip
+-- unavailable modifier requested: 3 --
+-- unavailable modifier requested: 3 --
+invalid request block size: 21573 (max 4096)...skip
+-- unavailable modifier requested: 3 --
+-- unavailable modifier requested: 3 --
+invalid request block size: 21573 (max 4096)...skip
+-- unavailable modifier requested: 3 --
+invalid request block size: 21573 (max 4096)...skip
+-- unavailable modifier requested: 3 --
+invalid request block size: 21573 (max 4096)...skip
+-- unavailable modifier requested: 3 --
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+-- unavailable modifier requested: 3 --
+-- unavailable modifier requested: 3 --
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+-- unavailable modifier requested: 3 --
+invalid request block size: 25461 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+-- unavailable modifier requested: 3 --
+invalid request block size: 21573 (max 4096)...skip
+-- unavailable modifier requested: 3 --
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 18515 (max 4096)...skip
+-- unavailable modifier requested: 123 --
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+-- unavailable modifier requested: 3 --
+invalid request block size: 21573 (max 4096)...skip
+-- unavailable modifier requested: 22 --
+invalid request block size: 26890 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+-- unavailable modifier requested: 3 --
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21584 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 19794 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21584 (max 4096)...skip
+-- unavailable modifier requested: 128 --
+invalid request block size: 19525 (max 4096)...skip
+-- unavailable modifier requested: 22 --
+-- unavailable modifier requested: 22 --
+Empty python request. skip.
+[pid: 19995|app: -1|req: -1/509]  () {0 vars in 0 bytes} [Mon Jun  8 07:24:53 2020]   => generated 0 bytes in 0 msecs ( 0) 0 headers in 0 bytes (0 switches on core 3)
+Empty python request. skip.
+[pid: 19996|app: -1|req: -1/510]  () {0 vars in 0 bytes} [Mon Jun  8 07:24:53 2020]   => generated 0 bytes in 0 msecs ( 0) 0 headers in 0 bytes (0 switches on core 0)
+invalid request block size: 25956 (max 4096)...skip
+invalid request block size: 21584 (max 4096)...skip
+invalid request block size: 19790 (max 4096)...skip
+-- unavailable modifier requested: 3 --
+invalid request block size: 25709 (max 4096)...skip
+-- unavailable modifier requested: 58 --
+-- unavailable modifier requested: 1 --
+invalid uwsgi request (current strsize: 0). skip.
+[pid: 19993|app: -1|req: -1/514]  () {0 vars in 1 bytes} [Mon Jun  8 07:25:10 2020]   => generated 0 bytes in 0 msecs ( 500) 0 headers in 0 bytes (0 switches on core 6)
+uwsgi key cannot be null. skip this var.
+[pid: 19995|app: -1|req: -1/515]  () {0 vars in 3 bytes} [Mon Jun  8 07:25:10 2020]   => generated 0 bytes in 0 msecs ( 500) 0 headers in 0 bytes (0 switches on core 3)
+invalid request block size: 20297 (max 4096)...skip
+-- unavailable modifier requested: 22 --
+-- unavailable modifier requested: 22 --
+-- unavailable modifier requested: 128 --
+invalid request block size: 21573 (max 4096)...skip
+-- unavailable modifier requested: 4 --
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 7937 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+-- unavailable modifier requested: 3 --
+-- unavailable modifier requested: 3 --
+invalid request block size: 20047 (max 4096)...skip

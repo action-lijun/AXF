@@ -1,0 +1,224 @@
+爱鲜锋   全栈项目   提供css文件 其余的所有的html和js  后端所有的代码都是我们自己写
+
+
+
+项目的架构
+    template架构
+        分析：（1）首页  闪购 购物车 我的  都共享了  底部导航栏 和 小黄条
+             （2）注册  登录  共享了 上面的小橙色的条
+             （3）订单  小绿条
+
+              base.html  ----》html的结构标签 适用于（1）（2）（3）   基模板
+                                block css block header....
+                         base_main.html  ---》底部的导航栏  小黄条
+                                home.html
+                                market.html
+                                cart.html
+                                mine.html
+
+                         base_user.html  ---》小橙条
+                                register.html
+                                login.html
+
+                         base_order.html  ---》小绿条
+                                order.html
+
+    static  架构
+
+        分析：  （1）首页  闪购  购物车  我的  都有属于自己的页面的样式
+               （2）注册  登录  都有属于自己的样式
+               （3）订单  也有属于自己的样式
+               （4）所有的页面都会共用一个或者几个样式/js（jquery）
+
+               static
+                    css  存储的是所有的页面都会共用的样式
+                    js   存储的是所有的页面都会共用的js
+                    axf
+                        main
+                            home   首页
+                                css
+                                    home.css
+                                js
+                                    market.js
+                            market 闪购
+                                css
+                                    market.css
+                                js
+                                    market.js
+                            cart   购物车
+                                css
+                                    cart.css
+                                js
+                                    cart.js
+                            mine   我的
+                                css
+                                    mine.css
+                                js
+                                    mine.js
+                        user
+                            login
+                            register
+
+
+
+（1）视图转换窗口
+（2）点谁就跳转到哪一个页面
+（3）点谁谁黄
+
+
+
+1 首页
+2 闪购   3级联动
+3 购物车
+4 我的
+5 注册
+（1）用户名字的前端验证
+    （2）用户名字的后端验证
+    （3）密码和确认密码一致
+
+    （4）密码加密: 前端加密  防止抓包工具进行抓取
+                 后端加密  数据库的字段加密  django提供了默认的加密方式
+    （5）邮件发送
+
+        设置一个授权码   设置--》pop3/smtp/imap-->客户端授权密码--》开启设置
+        注意不允许授权码和密码一致
+
+        1.发送邮件
+            settings中设置 EMAIL_HOST
+                          EMAIL_PORT
+                          EMAIL_HOST_USER
+                          EMAIL_HOST_PASSWORD
+
+            views中书写方法
+                          from django.core.mail import send_mail
+
+                          send_mail(
+                                'Subject here',
+                                'Here is the message.',
+                                'from@example.com',
+                                ['to@example.com'],
+                                fail_silently=False,
+                          )
+
+        2.邮件的激活策略
+            点击链接
+            执行视图函数
+            修改当前对象的激活状态
+        3.邮件的生命周期
+            缓存
+
+            cache.set(key,value,timeout=45)
+
+            cache.get(key)
+
+            1 怎么证明过期  点击的时候失效
+            2 链接失效？    http://127.0.0.1:8000/axfuser/account/?token=token不好用了
+            3 token没有了
+
+        4.邮件的激活次数
+            现在的这个邮件能激活多少次? 只要是在缓存时间内就可以激活N多次
+    （6）注册的验证  所有的验证通过之后才允许提交  如果有一个没有验证通过，那么就不允许提交
+
+2 登录
+
+
+    有可能购物车页面构建
+
+
+
+
+
+    jquery    事件驱动   对页面标签的操作    （点击  鼠标失去焦点   focus  change。。submit。。。）
+    ajax      其实质是利用ajax对象(xmlhttprequest)
+     异步的向服务器发送请求  整个过程无刷新 不打断用户的操作  用户体验好   发请求的
+
+
+    jquery + ajax 就是点击了某个按钮 然乎触发的请求
+
+    $(function(){
+        $.getJson(
+            '/axfuser/login/',
+            {'name':name},
+            functin(data){
+            }
+        )
+    })
+
+    '/axfuser/login/',
+    {'name':'zs'},   向视图函数发送请求  并且传递参数
+
+    functin(data){
+            }  视图函数执行完之后的返回  data就是jsonResponse的值
+
+    name 就是你需要验证的 数据   eg：用户名字是否重复   所以要获取文本框中的name的值  $('#name').val()
+
+6 登录
+        1 滑动验证码
+        https://www.cnblogs.com/Guishuzhe/p/9607818.html
+
+
+        2 登录
+            验证码
+            用户名字和密码
+
+        3 闪购中点击+号 会将商品添加到购物车
+
+            将商品添加到购物车都需要什么条件呢？
+            需要user和goods  那么user登录之后 绑定到过session  所以可以获取
+            接下来省goods如何获取了
+7 订单
+day17
+    1 点击单选按钮 取反
+      c_is_select ---> cart ---> cartid
+
+    2 根据单选判断全选  如果单选中全部都选中 那么全选就变成选中
+                     如果单选中有一个未选中 那么全选就变成不选中
+
+    3 点击全选
+              如果有未选中的  那么就变成将未选中的变成选中
+              如果全选中了    那么就将选中的变成未选中
+
+
+      单选和全选共用了一个样式
+
+              分析  将未选中的和选中的 分别放在一个列表中
+                    select_list     选中的
+                    unselect_list   未选中的
+
+                   如果未选中的列表为0  那么就证明全部都选中
+                   if unselect.length == 0
+
+       点击的全选的时候 并没有判断全选是加对号
+
+    4 总价
+
+       什么情况下会判断总价？
+                    （1）刚进来的时候会判断总价
+                    （2）减的时候会判断总价
+                    （3）加的时候会判断总价
+                    （4）单选的时候会判断总价
+                    （5）全选的时候会判断总价
+       总价怎么计算？
+                     选中的商品的价格 * 数量
+8 支付
+订单
+    1 生成订单之后 那么购物车中的数据是没有了
+
+    2 订单的逻辑
+        order_detail.html  订单详情的页面 ---》 ordergoods表里的数据要放到order_detail.html
+
+        ordergoods里都应该有什么字段呢？order的外键  一对多
+
+        order对象咋来呢？和user有关
+
+
+    图片  名字  价格 ===》goods
+
+    订单编号        ===》order
+
+    数量           ===》ordergoods
+
+9 nginx
+10 部署
+
+

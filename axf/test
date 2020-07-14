@@ -1,0 +1,81 @@
+day14
+    1 中间件
+        有很多的地方都需要使用user_id
+
+        返回的是一个页面
+            cart
+            mine
+
+        返回json
+            makeOrder
+            addToCart
+            subToCart
+            changeStatus
+            allSelect
+
+
+
+
+
+    2 支付
+
+            （1）下载公钥和私钥
+            （2）pip install python-alipay-sdk --upgrade
+            （3）创建alipay_config的文件夹
+            （4）将公钥和私钥复制到该文件夹中的文件app_rsa_private_key.pem和alipay_rsa_public_key.pem
+            （5）注意格式要求-----BEGIN RSA PRIVATE KEY----- -----END RSA PRIVATE KEY-----
+            （6）定义视图函数
+                alipay = AliPay(
+                    appid="2016093000627735",  你的支付宝的appid
+                    app_notify_url=None,  # 默认回调url
+                    app_private_key_string=PRIVATE_KEY,  读取到的私钥
+                    # 支付宝的公钥，验证支付宝回传消息使用，不是你自己的公钥,
+                    alipay_public_key_string=PUBLIC_KEY,  读取到的公钥
+                    sign_type="RSA2",  #RSA2
+                    debug = False  # 默认False
+                )
+            （7）
+                subject = "苹果耳机"
+
+                    # 电脑网站支付，需要跳转到https://openapi.alipay.com/gateway.do? + order_string
+                    order_string = alipay.api_alipay_trade_page_pay(
+                        out_trade_no="110",
+                        total_amount=1999,
+                        subject=subject,
+                        return_url="https://www.1000phone.com",
+                        notify_url="https://www.1000phone.com"  # 可选, 不填则使用默认notify url
+                    )
+
+             （8）注意返回值地址
+                 return redirect('https://openapi.alipaydev.com/gateway.do?' + order_string)
+
+
+
+    3 nginx
+        服务器/反向代理
+
+        安装
+
+        nginx.conf  静态文件
+        uwsgi.ini   动态文件
+        动静结合
+
+        静态的文件的访问是不需要端口号
+        动态文件的访问是需要端口号的
+        动静结合之后是不需要的
+
+
+        阿里云
+            购买阿里云服务器
+            在服务器上做系统
+            安装软件  虚拟环境  mysql  redis nginx
+            部署
+            访问
+
+
+
+
+
+
+day15
+    前后端分离
